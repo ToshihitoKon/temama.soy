@@ -12,20 +12,26 @@ menu:
             icon: user
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+## 今利仁 (Kon Toshihito)
 
-Hugo makes use of a variety of open source projects including:
+### 経歴
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+- 北海道千歳市出身
+- 公立はこだて未来大学中退
+- 2019-2023 面白法人カヤック SRE
+- 2024- 株式会社Donuts SRE室
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+### 経験分野
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+- Golang
+    - Webアプリケーション
+    - AWS SDK等を利用したCLIツール
+    - Slack bot
+- AWS
+    - ECSを主軸にした本番及び開発、検証環境の構築
+- GCP
+    - AppEngine, DataStoreを主軸にした本番及び開発環境の構築
+- IaC
+    - Terraform
+- Node.js
+    - Expressを利用したWebアプリケーション

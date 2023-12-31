@@ -1,4 +1,5 @@
 ---
+title: 'temama.soy'
 menu:
     main:
         name: Home
@@ -6,3 +7,5 @@ menu:
         params:
             icon: home
 ---
+
+ToshihitoKonの作ったものとかブログを置いておく場所
