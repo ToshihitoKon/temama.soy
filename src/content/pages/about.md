@@ -1,15 +1,10 @@
 ---
-title: 'About'
-description: ToshihitoKonについて
-aliases:
-  - about-us
-  - about-hugo
-  - contact
-menu:
-    main: 
-        weight: -90
-        params:
-            icon: user
+title: About
+url: /about
+description: about
+date: '2024-01-01'
+license: CC BY-NC-ND
+lastmod: '2024-01-01'
 ---
 
 ## 今利仁 (Kon Toshihito)
@@ -17,7 +12,7 @@ menu:
 ### 経歴
 
 - 北海道千歳市出身
-- 公立はこだて未来大学中退
+- 公立はこだて未来大学 中退
 - 2019-2023 面白法人カヤック SRE
 - 2024- 株式会社Donuts SRE室
 
