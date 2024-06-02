@@ -1,5 +1,4 @@
-# baseurl: https://temama.soy
-baseurl: http://localhost:8000
+baseurl: https://temama.soy
 languageCode: ja
 theme: hugo-theme-stack
 module:
