@@ -1,0 +1,13 @@
+services:
+  # expoter:
+  otel-collector:
+    build:
+      context: ./otel
+      dockerfile: Dockerfile
+    networks:
+      - observer
+
+networks:
+  observer:
+    name: temama-soy-observer
+    external: true
