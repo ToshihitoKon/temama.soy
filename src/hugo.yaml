@@ -1,0 +1,46 @@
+baseURL: 'https://temama.soy/'
+title: 'temama.soy'
+theme: 'colordrop'
+themesDir: 'themes'
+buildDrafts: true
+buildExpired: true
+buildFuture: true
+contentDir: 'content'
+copyright: '© 2024 Toshihito Kon. Published under CC BY-NC-ND 4.0.'
+dataDir: 'data'
+defaultContentLanguage: 'ja'
+defaultContentLanguageInSubdir: false
+disableAliases: false
+enableEmoji: false
+enableGitInfo: false
+enableRobotsTXT: false
+environment: 'production'
+hasCJKLanguage: true
+languageCode: 'ja-jp'
+layoutDir: 'layouts'
+timeZone: 'Asia/Tokyo'
+menus:
+  main:
+    - name: 'About'
+      pageRef: '/about'
+    - name: 'Blog'
+      pageRef: '/posts'
+    - name: 'SpeakerNotes'
+      pageRef: '/spekaernotes'
+    - name: 'Releases'
+      pageRef: '/releases'
+  footer:
+    - identifier: github
+      name: github
+      url: "https://github.com/ToshihitoKon"
+      weight: 1
+    - identifier: twitter
+      name: twitter
+      url: "https://bsky.app/profile/temama.bsky.social"
+      weight: 2
+pagination:
+  disableAliases: false
+params:
+  themeColor: "#a95b60"
+  themeInverseColor: "#ffffff"
+  siteLogo: "img/icon.png"

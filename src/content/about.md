@@ -1,20 +1,16 @@
 ---
 title: About
-url: /about
-description: about
-date: '2024-01-01'
-license: CC BY-NC-ND
-lastmod: '2024-01-01'
 ---
 
 ## 今利仁 (Kon Toshihito)
 
 ### 経歴
 
+- 1998/01/21生
 - 北海道千歳市出身
-- 公立はこだて未来大学 中退
 - 2019-2023 面白法人カヤック SRE
-- 2024- 株式会社Donuts SRE室
+- 2024-2024 株式会社Donuts SRE室
+- 2024- Repro株式会社 Development Div. Platform Team. Sys-Infra Unit.
 
 ### 経験分野
 
