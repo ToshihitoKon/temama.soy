@@ -1,4 +1,4 @@
-baseurl: https://temama.soy
+baseurl: 'https://temama.soy'
 title: temama.soy
 paginate: 5
 theme: "PaperMod"
