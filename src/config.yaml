@@ -2,7 +2,7 @@ baseurl: 'https://temama.soy'
 title: temama.soy
 paginate: 5
 theme: "PaperMod"
-copyright: © 2024 Toshihito Kon CC BY-SA
+copyright: © 2024 Toshihito Kon CC BY-SA 4.0
 timezone: Asia/Tokyo
 
 enableRobotsTXT: true
@@ -24,16 +24,11 @@ languages:
     Title: temama.soy
     weight: 1
     Params:
-      homeInfoParams:
-        title: temama.soy - temama's blog 
       dateFormat: 2006-01-02
   en:
     languageName: English
     Title: temama.soy
     weight: 2
-    Params:
-      homeInfoParams:
-        title: temama.soy - temama's blog 
 
 # ref: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-installation/
 params:
@@ -43,7 +38,6 @@ params:
 
   env: production
   title: temama.soy
-  # description: "temama.soy"
   keywords: [Blog, Portfolio]
   author: "Toshihito Kon"
   images: ["/assets/img/icon.png"]
