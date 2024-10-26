@@ -10,6 +10,11 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 minify:
   disableXML: true
   minifyOutput: true
