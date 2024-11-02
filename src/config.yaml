@@ -13,16 +13,16 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
 markup:
   goldmark:
     renderer:
       unsafe: true
-
+    parser:
+      attribute:
+        block: true
 minify:
   disableXML: true
   minifyOutput: true
-
 # Langage Settings
 languageCode: ja
 DefaultContentLanguage: ja
@@ -38,13 +38,11 @@ languages:
     languageName: English
     Title: temama.soy
     weight: 2
-
 # ref: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-installation/
 params:
   mainSections:
     - blogs
     - tools
-
   env: production
   title: temama.soy
   keywords: [Blog, Portfolio]
@@ -53,7 +51,6 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
-
   ShowReadingTime: false
   ShowShareButtons: true
   ShareButtons:
@@ -71,16 +68,13 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
-
   profileMode:
     enabled: false
-
   socialIcons:
     - name: GitHub
       url: "https://github.com/ToshihitoKon"
     - name: Bluesky
       url: "https://bsky.app/profile/temama.bsky.social"
-
 menu:
   main:
     - identifier: about
