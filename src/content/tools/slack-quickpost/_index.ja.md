@@ -31,7 +31,7 @@ draft: true
 
 ## インストール
 
-バイナリかgo installのどちらかから選べます。
+バイナリかgo installを利用できます。
 
 ビルド済みバイナリは<a target="_blank" href="https://github.com/ToshihitoKon/slack-quickpost/releases">GitHub Release</a>からダウンロードすることができます。  
 goを利用する場合は`go install github.com/ToshihitoKon/slack-quickpost@latest`で最新を取得できます。
@@ -51,8 +51,8 @@ OAuth TokenはBot User OAuth Token(`xorb-`から始まるもの)を利用しま�
 最小のオプションは、Tokenとチャンネル、投稿テキストの指定です。
 ```bash
 $ slack-quickpost \
-    --token xorb-XXX \
-    --channel CXXX \
+    --token "xorb-XXX" \
+    --channel "CXXX" \
     --text "hoge"
 ```
 
@@ -62,7 +62,7 @@ slack-quickpostは`SLACK_TOKEN`環境変数がセットされている場合は�
 ```bash
 $ export SLACK_TOKEN=xorb-XXX
 $ slack-quickpost \
-    --channel CXXX \
+    --channel "CXXX" \
     --text "hoge"
 ```
 
@@ -91,9 +91,9 @@ $ slack-quickpost \
     --file image.png \
 ```
 
-<div class="note">
-<h1>Note</h1>
-</div>
+
+`--file`を指定した場合、 `--text` `--username` `--icon*`は無視されます。
+{ .note }
 
 ### スニペット
 
@@ -102,7 +102,7 @@ $ slack-quickpost \
 ### プロファイル
 
 プロファイルは、OAuth TokenとChannelをファイルに保存して、ファイル名の指定で呼び出す機能です。  
-プロファイルは`~/.config/slack-quickpost/*.yaml`に保存することで利用できます。  
+`~/.config/slack-quickpost/*.yaml`に保存することで利用できます。  
 
 ```yaml
 # ~/.config/slack-quickpost/sample.yaml
@@ -112,7 +112,7 @@ channel: CXXX
 
 ```bash
 $ slack-quickpost \
-    --profile sample \
+    --profile "sample" \
     --text "hoge"
 ```
 
@@ -167,24 +167,15 @@ $ slack-quickpost \
 }
 
 .note {
-  border: 1px solid #fff0b3;
-  background-color: #fff0b3;
+  padding: 16px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 1em;
+
+  background-color: #FEF0B3;
 }
 .dark .note {
-  border: 1px solid #cd853f;
-  background-color: #cd853f;
+  background-color: #2e2e33;
 }
 
-.note {
-  padding: 16px;
-  margin: 16px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-size: 1em;
-}
-
-.note h1 {
-  font-size: 1em;
-  margin: auto;
-}
 </style>
