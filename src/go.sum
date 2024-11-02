@@ -1,2 +1,4 @@
-github.com/CaiJimmy/hugo-theme-stack/v3 v3.21.0 h1:GT519sWiMhJCYO2xkxgjTvgGZsfP31Q79OURWGTT8/Y=
-github.com/CaiJimmy/hugo-theme-stack/v3 v3.21.0/go.mod h1:IPmCXiIxlFSLFYS0tOmYP6ySLviyeNVSabyvSuaxD+I=
+github.com/adityatelange/hugo-PaperMod v0.0.0-20240915081152-a2eb47bb4b80 h1:IfLPokx2zpHroEDwNUXsXTxiG93dg/nc86djmWXS4SM=
+github.com/adityatelange/hugo-PaperMod v0.0.0-20240915081152-a2eb47bb4b80/go.mod h1:HCHxNMKYdGafUYjVV3ICiAqznZK2yH0iI53jqcDFDdQ=
+github.com/martignoni/hugo-notice v0.0.0-20240707105359-40327ac00cc4 h1:lxS0B1ta9/uW+orrnvsGHMCC0TgN4DymEgdlb0PL/uU=
+github.com/martignoni/hugo-notice v0.0.0-20240707105359-40327ac00cc4/go.mod h1:MIQPOMgEcbyRC0gNLzQFSgrS+wIy3RuQ/HbaZYtTOKU=

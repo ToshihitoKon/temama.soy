@@ -7,18 +7,7 @@ draft: true
 
 記事更新時のバージョン: [v0.8.0](https://github.com/ToshihitoKon/slack-quickpost/releases/tag/v0.8.0)
 
-<a class="card" href="https://github.com/ToshihitoKon/slack-quickpost" target="_blank">
-  <div class="card-header">
-    <img src="https://avatars.githubusercontent.com/u/10419053?s=200&v=4" alt="GitHub Logo">
-    <div class="card-title">
-      ToshihitoKon/slack-quickpost
-    </div>
-  </div>
-  <div class="card-description">
-    slack post cli tool
-</div>
-  <div class="card-footer">github.com</div>
-</a>
+{{< ghcard "https://github.com/ToshihitoKon/slack-quickpost" >}}
 
 旧Slack APPのIncoming Webhook主流から新AppのOAuth Token形式に移行する際に作った軽量なCLIツールです。
 
@@ -38,7 +27,7 @@ goを利用する場合は`go install github.com/ToshihitoKon/slack-quickpost@la
 
 ## セットアップ
 
-<a href="https://api.slack.com/apps" target="_blank">https://api.slack.com/apps</a>から新規Slack Appを作成するか、既存のAppを選択し、OAuth Tokenを作成します。  
+[https://api.slack.com/apps](https://api.slack.com/apps)から新規Slack Appを作成するか、既存のAppを選択し、OAuth Tokenを作成します。  
 Slack Appに必要なSocepsは以下になります。
 
 - `chat:write.customize`
@@ -91,9 +80,9 @@ $ slack-quickpost \
     --file image.png \
 ```
 
-<div class="note">
-<h1>Note</h1>
-</div>
+{{< notice info>}}
+Information
+{{< /notice >}}
 
 ### スニペット
 
@@ -115,76 +104,3 @@ $ slack-quickpost \
     --profile sample \
     --text "hoge"
 ```
-
-<style>
-.card {
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-description,
-.card-footer {
-    color: #555;
-}
-
-
-.card {
-    margin: 16px auto;
-    display: block;
-    border-radius: 8px;
-    padding: 16px;
-    max-width: 600px;
-}
-
-.card-header {
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
-
-.card img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 0;
-}
-
-.card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px;
-}
-
-.card-description {
-    font-size: 14px;
-    margin: 8px 0;
-}
-
-.card-footer {
-    font-size: 13px;
-    margin: 0;
-    text-align: right;
-}
-
-.note {
-  border: 1px solid #fff0b3;
-  background-color: #fff0b3;
-}
-.dark .note {
-  border: 1px solid #cd853f;
-  background-color: #cd853f;
-}
-
-.note {
-  padding: 16px;
-  margin: 16px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-size: 1em;
-}
-
-.note h1 {
-  font-size: 1em;
-  margin: auto;
-}
-</style>

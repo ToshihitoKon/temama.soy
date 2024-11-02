@@ -1,0 +1,12 @@
+{{- $url := (.Get 0) -}}
+{{- with resources.GetRemote $url -}}
+  {{- with .Err -}}
+    {{- warnf "%s" . -}}{{- . -}}
+  {{- else -}}
+    {{- with strings.FindRESubmatch `<meta[^>]*og:image[^>]*content="([^"]+)` .Content -}}
+      <a href="{{- $url -}}">
+        <img src="{{- index . 0 1 -}}"/>
+      </a>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
