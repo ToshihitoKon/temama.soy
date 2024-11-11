@@ -1,19 +1,28 @@
 baseurl: 'https://temama.soy'
 title: temama.soy
 paginate: 5
-theme: "PaperMod"
 copyright: © 2024 Toshihito Kon CC BY-SA 4.0
 timezone: Asia/Tokyo
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod
+    - path: github.com/martignoni/hugo-notice
+    - path: _custom
 
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
 minify:
   disableXML: true
   minifyOutput: true
-
 # Langage Settings
 languageCode: ja
 DefaultContentLanguage: ja
@@ -29,13 +38,11 @@ languages:
     languageName: English
     Title: temama.soy
     weight: 2
-
 # ref: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-installation/
 params:
   mainSections:
     - blogs
     - tools
-
   env: production
   title: temama.soy
   keywords: [Blog, Portfolio]
@@ -44,7 +51,6 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
-
   ShowReadingTime: false
   ShowShareButtons: true
   ShareButtons:
@@ -62,16 +68,13 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
-
   profileMode:
     enabled: false
-
   socialIcons:
     - name: GitHub
       url: "https://github.com/ToshihitoKon"
     - name: Bluesky
       url: "https://bsky.app/profile/temama.bsky.social"
-
 menu:
   main:
     - identifier: about
