@@ -1,0 +1,39 @@
+services:
+  grafana:
+    image: grafana/grafana
+    links:
+      - metrics-storage:metrics.storage.local
+    ports:
+      - 3000:3000
+    networks:
+      - default
+    environment:
+      GF_PATHS_CONFIG: /etc/grafana/grafana.ini
+      GF_PATHS_DATA: /mnt/host/grafana
+      GF_PATHS_HOME: /usr/share/grafana
+      GF_PATHS_LOGS: /var/log/grafana
+      GF_PATHS_PLUGINS: /var/lib/grafana/plugins
+      GF_PATHS_PROVISIONING: /etc/grafana/provisioning
+    volumes:
+      - type: bind
+        source: ./data-grafana
+        target: /mnt/host/
+
+  metrics-storage:  
+    build:
+      context: ./mimir
+      dockerfile: Dockerfile
+    networks:
+      - default
+      - observer
+    ports:
+      - 9009:9009
+    volumes:
+      - type: bind
+        source: ./data-mimir
+        target: /mnt/host/
+
+networks:
+  observer:
+    name: temama-soy-observer
+    external: true

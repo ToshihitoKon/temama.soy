@@ -1,0 +1,42 @@
+multitenancy_enabled: false
+
+blocks_storage:
+  backend: filesystem
+  bucket_store:
+    sync_dir: /tmp/mimir/tsdb-sync
+  filesystem:
+    dir: /mnt/host/data/tsdb
+  tsdb:
+    dir: /mnt/host/tsdb
+
+compactor:
+  data_dir: /mnt/host/compactor
+  sharding_ring:
+    kvstore:
+      store: memberlist
+
+distributor:
+  ring:
+    instance_addr: 127.0.0.1
+    kvstore:
+      store: memberlist
+
+ingester:
+  ring:
+    instance_addr: 127.0.0.1
+    kvstore:
+      store: memberlist
+    replication_factor: 1
+
+ruler_storage:
+  backend: filesystem
+  filesystem:
+    dir: /mnt/host/rules
+
+server:
+  http_listen_port: 9009
+  log_level: error
+
+store_gateway:
+  sharding_ring:
+    replication_factor: 1
